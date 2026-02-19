@@ -34,7 +34,20 @@
 </head>
 <body class="bg-base-200 max-w-[768px] mx-auto min-h-[100vh]">
   <header>
-    <h1 class="text-4xl text-red-700 pt-40 text-center"> Hello Nigga</h1>
+    <nav class="flex justify-between items-center p-5 shadow">
+      <div class="flex justify-center items-center gap-3">
+        <img class="w-[60px]" src="assets/logo.png" alt="Logo">
+        <div>
+          <h2 class="text-xl font-extrabold text-primary-text">$<span id="ballance">45000</span></h2>
+          <p class="opacity-50">Available Balance</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn rounded-lg border-gray-300 text-gray-400 shadow py-5">
+          <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Log Out
+        </button>
+      </div>
+    </nav>
   </header>
   <script src="scripts/machine.js"></script>
 </body>
