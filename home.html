@@ -33,6 +33,11 @@
     * {
       font-family: "Outfit", sans-serif;
     }
+    
+    .active {
+      border: 1px solid #0874F2;
+      color: #0874F2;
+    }
   </style>
 </head>
 
@@ -58,35 +63,35 @@
         and </p>
     </section>
     <section class="w-11/12 mx-auto mt-10 grid grid-cols-3 gap-4 pb-15">
-      <button onclick="showOnly('add-money')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn" onclick="showOnly('add-money', 'btn')"
+        class=" text-primary-text btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-1.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Add Money</p>
+        <p class=" text-xl opacity-70">Add Money</p>
       </button>
-      <button onclick="showOnly('cashout')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn2" onclick="showOnly('cashout','btn2')"
+        class="btn text-primary-text border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-2.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Cashout</p>
+        <p class=" text-xl opacity-70">Cashout</p>
       </button>
-      <button onclick="showOnly('transfer-money')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn3" onclick="showOnly('transfer-money', 'btn3')"
+        class="btn text-primary-text border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-3.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Transfer Money</p>
+        <p class=" text-xl opacity-70">Transfer Money</p>
       </button>
-      <button onclick="showOnly('get-bonus')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn4" onclick="showOnly('get-bonus', 'btn4')"
+        class="btn text-primary-text border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-4.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Get Bonus</p>
+        <p class=" text-xl opacity-70">Get Bonus</p>
       </button>
-      <button onclick="showOnly('pay-bill')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn5" onclick="showOnly('pay-bill', 'btn5')"
+        class="btn text-primary-text border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-5.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Pay Bill</p>
+        <p class=" text-xl opacity-70">Pay Bill</p>
       </button>
-      <button onclick="showOnly('transiction')"
-        class="btn border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
+      <button id="btn6" onclick="showOnly('transiction', 'btn6')"
+        class="btn text-primary-text border-gray-300 rounded-xl h-[150px] px-[26px] py-5 flex flex-col justify-center items-center gap-2">
         <img width="36px" src="assets/opt-6.png" alt="Add money">
-        <p class=" text-xl text-primary-text opacity-70">Transactions</p>
+        <p class=" text-xl opacity-70">Transactions</p>
       </button>
     </section>
   </header>
