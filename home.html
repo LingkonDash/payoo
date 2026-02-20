@@ -178,7 +178,7 @@
       </div>
     </section>
     <!-- Cashout Section -->
-    <section id="cashout" class=" w-11/12 mx-auto text-primary-text mt-8 space-y-10 pb-10">
+    <section id="cashout" class=" hidden w-11/12 mx-auto text-primary-text mt-8 space-y-10 pb-10">
       <h2 class="font-semibold text-[24px] opacity-90">Cash Out</h2>
 
       <div class="card bg-base-100 rounded-3xl w-11/12 max-w-[450px] mx-auto shadow">
@@ -204,7 +204,6 @@
         </div>
       </div>
     </section>
-
     <!-- Transfer money section -->
     <section id="transfer-money" class=" hidden w-11/12 mx-auto text-primary-text mt-8 space-y-10 pb-10">
       <h2 class="font-semibold text-[24px] opacity-90">Transfer Money</h2>
@@ -213,7 +212,7 @@
         <div class="card-body">
           <fieldset class="fieldset space-y-4">
             <label class="label font-medium text-2xl text-primary-text">User Account Number</label>
-            <input id="transfer-acc-num" class="input rounded-full w-full p-5 h-15 border-none bg-base-300 text-xl"
+            <input id="transfer-acc-num" value="13516513213" class="input rounded-full w-full p-5 h-15 border-none bg-base-300 text-xl"
               type="text" maxlength="11" minlength="11" placeholder="Enter 11 digit number" />
 
             <label class="label font-medium text-2xl text-primary-text">Amount</label>
@@ -252,7 +251,7 @@
       </div>
     </section>
     <!-- Pay bill -->
-    <section id="pay-bill" class=" hidden w-11/12 mx-auto text-primary-text mt-8 space-y-10 pb-10">
+    <section id="pay-bill" class="  w-11/12 mx-auto text-primary-text mt-8 space-y-10 pb-10">
       <h2 class="font-semibold text-[24px] opacity-90">Pay Bill</h2>
 
       <div class="card bg-base-100 rounded-3xl w-11/12 max-w-[450px] mx-auto shadow">
@@ -260,7 +259,7 @@
           <fieldset class="fieldset space-y-4">
             <label class="label font-medium text-2xl text-primary-text">Select To Pay</label>
             <select id="bill-bank" class="select rounded-full w-full p-5 h-15 border-none bg-base-300 text-xl">
-              <option disabled selected>Select bank</option>
+              <option disabled selected value="select-bank">Select bank</option>
               <option>BRAC Bank</option>
               <option>Dutch-Bangla Bank</option>
               <option>City Bank</option>
@@ -269,7 +268,7 @@
             </select>
 
             <label class="label font-medium text-2xl text-primary-text">Biller Account Number</label>
-            <input id="biller-acc-num" class="input rounded-full w-full p-5 h-15 border-none bg-base-300 text-xl"
+            <input id="biller-acc-num" value="13516513213" class="input rounded-full w-full p-5 h-15 border-none bg-base-300 text-xl"
               type="text" maxlength="11" minlength="11" placeholder="Enter account number" />
 
             <label class="label font-medium text-2xl text-primary-text">Amount to Pay</label>
